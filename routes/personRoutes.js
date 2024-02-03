@@ -28,6 +28,7 @@ router.post('/', async(req, res) => {
 router.get('/', async(req, res) => {
 
   try{
+    //find() is mongodb query to find all db records.
     const data = await Person.find();
     console.log('Data Fetched')
     res.status(200).json(data);
