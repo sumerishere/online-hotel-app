@@ -1,4 +1,10 @@
+# command for removing unwanted added files in git
+# git rm -r --cached files_name
+#-----------------------------------------------------#
+
 # Ignore node_modules directory
 node_modules/
+js-prc-files/
+notes.js
 
 # Other entries...
