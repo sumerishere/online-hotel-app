@@ -2,11 +2,17 @@ const express = require('express');
 const app = express();  //blue print of express.
 const db = require('./db');
 
+//configure env file by calling config function.
+require('dotenv').config();
+
 const bodyParser = require('body-parser');
-app.use(bodyParser.json()); //store in req.body for further use.
+
+//store in req.body for further use.
+app.use(bodyParser.json()); 
 
 
-
+const PORT = process.env.PORT || 3000;
+//where process.env use to access var present in env file.
 
 
 
@@ -137,29 +143,7 @@ app.use('/menu', menuRoutes);
 
 
 
-        //------------practise code-----------//
 
-// app.get('/chicken',(req,res) => {
-//   res.send('Sure will try to serve as possible as i can');
-// })
-
-// app.get('/hotel-biryani',(req,res) => {
-
-//   var order_details = {
-//     order_name:'mandii',
-//     mandii_size: 'four people',
-//     items_on_mandii:'chicken, fish, egg, and meat.',
-//     cold_drinks:true
-//   }
-
-//   res.send(order_details);
-// })
-
-// app.post('/person',(req,res) =>{
-//   res.send('Data Successfully saved!');
-// })
-
-
-app.listen(3000, ()=> console.log('Bhaii server started port:3000! pe.'))
+app.listen(PORT, ()=> console.log('Bhaii server started port:3000! pe.'))
 
 
