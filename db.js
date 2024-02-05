@@ -4,16 +4,11 @@ require('dotenv').config();
 //Define mongoDB connection URL
 
 //local url
-<<<<<<< HEAD
 // const mongoURl = 'mongodb://localhost:27017/hotelDB'
 // const mongURL = process.env.MongoDB_URL_LOCAL
 
 //hosted url on mongoDB atlas.
 const mongoURl = process.env.MongoDB_URL;
-  //where hotelDB -->   own DB name.
-=======
-const mongoURl = 'mongodb://localhost:27017/hotelDB'
->>>>>>> 61ac7f495823bf8ff642f64f67db2e3e245b1a97
 
 mongoose.connect(mongoURl, {
   useNewUrlParser:true,
