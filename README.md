@@ -1,8 +1,8 @@
-#Online Hotel App#
+Online Hotel App
 
 The Online Hotel App application is a Node.js-based system developed using the Express.js framework, with MongoDB as the chosen database. This application manages information related to persons (staff) and menu items. It exposes specific endpoints to handle CRUD (Create, Read, Update, Delete) operations for both persons and menu items.
 
-##Endpoints
+**Endpoints**
 
 **Person**
 **Add a Person**:
@@ -50,7 +50,7 @@ The Online Hotel App application is a Node.js-based system developed using the E
     Endpoint: DELETE /menu/:id
     Description: Deletes a menu item from the system based on its ID.
 
-##Example:
+**Example:**
 `{
   "name": "John Doe",
   "age": 30,
@@ -61,7 +61,7 @@ The Online Hotel App application is a Node.js-based system developed using the E
   "salary": 30000
   }`
 
-##Usage:
+**Usage:**
 `npm install`
 
 
