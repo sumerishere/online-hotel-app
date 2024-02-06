@@ -6,8 +6,8 @@ The Online Hotel App application is a Node.js-based system developed using the E
 
 **Person**
 **Add a Person**:
-    Endpoint: POST /person
-    Description: Adds a person to the system with details such as name, role, etc.
+   Endpoint: POST /person
+   Description: Adds a person to the system with details such as name, role, etc.
 
 **Get All Persons**:
    Endpoint: GET /person
@@ -15,7 +15,8 @@ The Online Hotel App application is a Node.js-based system developed using the E
    
 **Get Persons by Work Type**:
     Endpoint: GET /person/:workType
-    Description: Retrieves a list of persons based on their work type (e.g., chef,         waiter, manager).
+    Description: Retrieves a list of persons based on their work type (e.g., chef,         
+    waiter, manager).
     
 **Update a Person**:
     Endpoint: PUT /person/:id
@@ -29,7 +30,8 @@ The Online Hotel App application is a Node.js-based system developed using the E
 
  **Add a Menu Item**:
      Endpoint: POST /menu
-     Description: Adds a menu item to the system with details such as name, price,          taste, etc.
+     Description: Adds a menu item to the system with details such as name, price,          
+     taste, etc.
 
  **Get All Menu Items**:
      Endpoint: GET /menu
@@ -37,7 +39,8 @@ The Online Hotel App application is a Node.js-based system developed using the E
 
  **Get Menu Items by Taste**:
      Endpoint: GET /menu/:taste
-     Description: Retrieves a list of menu items based on their taste (e.g., sweet,         spicy, sour).
+     Description: Retrieves a list of menu items based on their taste (e.g., sweet,         
+     spicy, sour).
 
 **Update a Menu Item**:
     Endpoint: PUT /menu/:id
@@ -47,7 +50,19 @@ The Online Hotel App application is a Node.js-based system developed using the E
     Endpoint: DELETE /menu/:id
     Description: Deletes a menu item from the system based on its ID.
 
+##Example:
+`{
+  "name": "John Doe",
+  "age": 30,
+  "work": "waiter",
+  "mobile": "123-456-7890",
+  "email": "john@example.com",
+  "address": "123 Main Street",
+  "salary": 30000
+  }`
 
+##Usage:
+`npm install`
 
 
     
